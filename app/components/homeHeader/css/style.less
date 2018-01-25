@@ -1,0 +1,35 @@
+.home-header{
+	display: flex;
+	background-color: rgb(233, 32, 61);
+	padding: 8px;
+	* {
+		font-size: 16px;
+		color: #fff;
+	}
+}
+.home-header-left{
+	flex: 0 0 60px;
+	margin: 5px 0;
+	text-align: center;
+}
+.home-header-middle{
+	flex: 1;
+	box-sizing: border-box;
+	padding: 0 5px 0 10px;
+	.search-container{
+		box-sizing: border-box;
+	  padding: 5px;
+	  width: 100%;
+	  background-color: #fff;
+	  border-radius: 15px;
+	  overflow: hidden;
+	  .icon-search {
+	  	color: #ccc;
+	  }
+	}
+}
+.home-header-right{
+	flex: 0 0 30px;
+	margin: 5px 0;
+	text-align: right;
+}
