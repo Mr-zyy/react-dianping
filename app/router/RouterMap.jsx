@@ -18,7 +18,7 @@ class RouterMap extends React.Component {
 					<Route path="city" component={City}></Route>
 					<Route path="user" component={User}></Route> 
 					<Route path="search/:type(/:keyword)(/:city)(/:page)" component={Search}></Route> 
-					<Route path="detail/:id" component={Detail}></Route>  
+					<Route path="detail/:city/:id" component={Detail}></Route>  
 					<Route path="*" component={NotFound}></Route>  
 				</Route>
 			</Router>

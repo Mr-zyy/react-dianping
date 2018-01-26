@@ -15,13 +15,11 @@ export default class List extends React.Component {
 				{
 					this.props.data.map((item, index) => {
 						return(
-							<Item key={index} data={item.data}/>
+							<Item key={index} data={item.data} city={item.city}/>
 						)
 					})
 				}
 			</div>
 		)
-	}
-	componentDidMount() {
 	}
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 
 import './css/style.less'
@@ -17,11 +18,13 @@ export default class Item extends React.Component {
 						return (
 							<div className="listContainer" key={index}>
 								<div className="pic">
-									<img src={item.img}/>
+									<Link to={'/detail/' + this.props.city + '/' + item.id}>
+										<img src={item.img}/>
+									</Link>
 								</div>
 								<div className="text">
 								  <div className="message">
-										<span className="title">{item.title}</span>
+										<span className="title">{item.title}--{this.props.city}</span>
 										<span className="distance">{item.distance}</span>
 									</div>
 									<div className="subTitle">{item.subTitle}</div>
