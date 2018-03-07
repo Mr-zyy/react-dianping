@@ -14,6 +14,7 @@ app.get('/api/homeAd',router.showHomeAd);
 app.get('/api/list/:city/:page',router.showList);
 app.get('/api/search/:page/:city/:type/:keyword',router.searchLists);
 app.get('/api/search/:type/:city/:page', router.searchLists)
-// app.get('/api/allSeller', router.findAllSellers)
+app.get('/api/info/:city/:id', router.getInfos)
+app.get('/api/comment/:page/:id', router.getComments)
 
 app.listen(8001)
